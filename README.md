@@ -1,167 +1,172 @@
-# 🎮 Starz Up — Online Gaming Tournament Platform
+# 🎮 Starz Up — Plataforma de Torneios Online de Jogos
 
-A full-featured web platform for organizing and managing competitive gaming tournaments. Built with vanilla JavaScript, CSS, and Firebase — no frameworks, no libraries.
+Uma plataforma web completa para organizar e gerenciar torneios competitivos de jogos. Desenvolvida com JavaScript puro, CSS e Firebase — sem frameworks ou bibliotecas externas.
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
 ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black)
-![License](https://img.shields.io/badge/License-MIT-green?style=flat-square)
-![Status](https://img.shields.io/badge/Status-Completed-blue?style=flat-square)
+![Licença](https://img.shields.io/badge/Licen%C3%A7a-MIT-green?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Conclu%C3%ADdo-blue?style=flat-square)
 
 ---
 
-## 📋 Overview
+## 📋 Visão geral
 
-Starz Up is a competitive gaming tournament platform where players can register for championships, manage their virtual balance, interact with the community, and compete across multiple game titles. The platform includes real-time data sync via Firebase, role-based access control, and a full admin panel.
+O **Starz Up** é uma plataforma de torneios competitivos de jogos na qual os jogadores podem se inscrever em campeonatos, gerenciar seu saldo virtual, interagir com a comunidade e competir em diferentes títulos.
 
-Developed as an Integrative Project for the Web Systems Development course at PUC Campinas, following Scrum methodology with 2-week sprints, requirement analysis, and multi-layer testing.
+A plataforma conta com sincronização de dados em tempo real por meio do Firebase, controle de acesso baseado em funções e um painel administrativo completo.
 
----
-
-## ✨ Features
-
-### User
-- **Authentication** — Firebase Auth with signup, login, and session persistence
-- **Tournament registration** — browse and join active tournaments
-- **Virtual balance** — wallet system with balance validation on registration
-- **Community page** — interact with other players
-- **Interactive dashboard** — track stats, registrations, and tournament history
-
-### Admin
-- **Admin panel** — full CRUD for tournaments, users, and platform content
-- **Permission control** — role-based access (user vs admin)
-- **Tournament management** — create, edit, close, and manage championships
-
-### Supported Games
-| Game | Status |
-|------|--------|
-| CS2 | ✅ Available |
-| VALORANT | ✅ Available |
-| Rocket League | ✅ Available |
-| Fortnite | ✅ Available |
+O projeto foi desenvolvido como um Projeto Integrador da disciplina de Desenvolvimento de Sistemas Web da PUC Campinas, seguindo a metodologia Scrum, com sprints de duas semanas, análise de requisitos e testes em múltiplas camadas.
 
 ---
 
-## 🖼️ Screenshots
+## ✨ Funcionalidades
 
-### Homepage
-![Homepage](docs/screenshots/homepage.png)
+### 👤 Usuário
 
-### Community
-![Community](docs/screenshots/community.png)
+- **Autenticação** — Firebase Authentication com cadastro, login e persistência de sessão.
+- **Inscrição em torneios** — visualização e participação em torneios ativos.
+- **Saldo virtual** — sistema de carteira com validação de saldo durante as inscrições.
+- **Página da comunidade** — interação entre os jogadores da plataforma.
+- **Painel interativo** — acompanhamento de estatísticas, inscrições e histórico de torneios.
 
-### Tournaments
-![Tournaments](docs/screenshots/tournaments.png)
+### 🛡️ Administrador
+
+- **Painel administrativo** — operações CRUD completas para torneios, usuários e conteúdos da plataforma.
+- **Controle de permissões** — acesso baseado em funções, diferenciando usuários comuns e administradores.
+- **Gerenciamento de torneios** — criação, edição, encerramento e administração de campeonatos.
+
+### 🎮 Jogos disponíveis
+
+| Jogo | Status |
+|---|---|
+| Counter-Strike 2 (CS2) | ✅ Disponível |
+| VALORANT | ✅ Disponível |
+| Rocket League | ✅ Disponível |
+| Fortnite | ✅ Disponível |
 
 ---
 
-## 🔌 Tech Stack
+## 🖼️ Capturas de tela
 
-| Layer | Technology |
-|-------|-----------|
-| **Frontend** | HTML5, CSS3, Vanilla JavaScript |
-| **Backend** | Firebase (Auth, Realtime Database) |
-| **Hosting** | Vercel |
-| **Version Control** | Git + GitHub |
-| **Methodology** | Scrum (2-week sprints) |
+### Página inicial
+
+![Página inicial](docs/screenshots/homepage.png)
+
+### Comunidade
+
+![Página da comunidade](docs/screenshots/community.png)
+
+### Torneios
+
+![Página de torneios](docs/screenshots/tournaments.png)
 
 ---
 
-## 🚀 Getting Started
+## 🔌 Tecnologias utilizadas
 
-### Try it online
+| Camada | Tecnologia |
+|---|---|
+| **Frontend** | HTML5, CSS3 e JavaScript puro |
+| **Backend e serviços** | Firebase Authentication e Realtime Database |
+| **Hospedagem** | Vercel |
+| **Controle de versão** | Git e GitHub |
+| **Metodologia de desenvolvimento** | Scrum, com sprints de duas semanas |
 
-The project is deployed on Vercel:
+---
 
-🔗 **[starz-up.vercel.app](https://starz-up.vercel.app)**
+## 🚀 Como executar o projeto
 
-> Create an account, explore the tournaments, and check the community page. Admin features require elevated permissions.
+### Experimente online
 
-### Run locally
+O projeto está hospedado na Vercel:
 
-1. Clone the repository:
+🔗 **[Acessar o Starz Up](https://starz-up.vercel.app)**
+
+> Crie uma conta, explore os torneios e acesse a página da comunidade. As funcionalidades administrativas exigem permissões elevadas.
+
+### Execute localmente
+
+**1. Clone o repositório:**
+
 ```bash
 git clone https://github.com/RaphaelSalesDEV/Starz-Up.git
 cd Starz-Up
 ```
 
-2. Open `index.html` in any modern browser — no build step required.
+**2. Abra o arquivo `index.html` em qualquer navegador moderno.**
 
-3. Firebase credentials are managed via environment variables. Contact the maintainers for test credentials.
+Não é necessário executar um processo de build para abrir a interface.
+
+**3. Configure as credenciais do Firebase.**
+
+As credenciais do Firebase são gerenciadas por variáveis de ambiente. Entre em contato com os responsáveis pelo projeto para obter credenciais de teste.
 
 ---
 
-## 🏗️ Architecture
-```
+## 🏗️ Arquitetura do projeto
+
+```text
 Starz-Up/
-├── docs/                  # Documentation and assets
-├── .gitignore             # OS, editor, and Firebase config exclusions
-├── build-config.js        # Build and deploy configuration
-├── vercel.json            # Vercel deployment settings
-├── LICENSE                # MIT License
-└── README.md              # You are here
+├── docs/                  # Documentação e recursos visuais
+├── .gitignore             # Exclusões de arquivos do sistema, editor e Firebase
+├── build-config.js        # Configuração de build e implantação
+├── vercel.json            # Configurações de implantação na Vercel
+├── LICENSE                # Licença MIT
+└── README.md              # Documentação principal do projeto
 ```
 
-### Firebase Integration
-- **Authentication** — email/password signup and login with session persistence
-- **Realtime Database** — live sync for tournament data, user balance, and community interactions
-- **Security Rules** — role-based read/write permissions (user vs admin)
-- **Environment Variables** — Firebase config protected via Vercel environment variables, never committed to the repo
+### Integração com Firebase
+
+- **Autenticação** — cadastro e login com e-mail e senha, incluindo persistência de sessão.
+- **Realtime Database** — sincronização de dados de torneios, saldo dos usuários e interações da comunidade em tempo real.
+- **Regras de segurança** — permissões de leitura e escrita baseadas em funções, diferenciando usuários comuns e administradores.
+- **Variáveis de ambiente** — configuração do Firebase protegida por variáveis de ambiente na Vercel, sem ser incluída diretamente no repositório.
 
 ---
 
-## 📐 Methodology
+## 📐 Metodologia de desenvolvimento
 
-This project was developed following **Scrum** as part of an Integrative Project at PUC Campinas:
+O projeto foi desenvolvido seguindo a metodologia **Scrum**, como parte de um Projeto Integrador da PUC Campinas.
 
-| Practice | Description |
-|----------|------------|
-| **Sprints** | 2-week cycles with defined deliverables |
-| **Role rotation** | Scrum Master and Product Owner roles rotated between team members |
-| **Requirements** | Functional and non-functional requirements documented before implementation |
-| **Testing** | Unit tests, exploratory tests, and system tests |
-| **Documentation** | Technical documentation maintained throughout the project |
+| Prática | Descrição |
+|---|---|
+| **Sprints** | Ciclos de duas semanas com entregas definidas. |
+| **Rotação de funções** | As funções de Scrum Master e Product Owner foram alternadas entre os integrantes da equipe. |
+| **Requisitos** | Requisitos funcionais e não funcionais documentados antes da implementação. |
+| **Testes** | Testes unitários, exploratórios e de sistema. |
+| **Documentação** | Documentação técnica mantida durante todo o desenvolvimento. |
 
 ---
 
 ## 🗺️ Roadmap
 
-| Phase | Description | Status |
-|-------|-------------|--------|
-| **1. Core Platform** | Auth, database, UI, tournaments, admin panel | ✅ Completed |
-| **2. Testing** | Unit, exploratory, and system tests | ✅ Completed |
-| **3. Deploy** | Vercel with environment variables | ✅ Completed |
-| **4. Future Development** | Additional games, payment integration, mobile responsive | 🔄 Under evaluation |
+| Etapa | Descrição | Status |
+|---|---|---|
+| **1. Plataforma principal** | Autenticação, banco de dados, interface, torneios e painel administrativo. | ✅ Concluída |
+| **2. Testes** | Testes unitários, exploratórios e de sistema. | ✅ Concluída |
+| **3. Implantação** | Hospedagem na Vercel com variáveis de ambiente. | ✅ Concluída |
+| **4. Desenvolvimento futuro** | Novos jogos, integração de pagamentos e melhorias na responsividade mobile. | 🔄 Em avaliação |
 
-> Future development depends on team decision. The project is fully functional as a completed semester deliverable.
-
----
-
-## 👥 Contributors
-
-| Contributor | Role |
-|------------|------|
-| **[Rafael Sanguini](https://github.com/rsanguini)** | Frontend development, UI/UX, authentication, dashboard, community page |
-| **[Raphael Sales](https://github.com/RaphaelSalesDEV)** | Firebase integration, backend logic, admin panel, deployment |
+> O desenvolvimento futuro depende de decisões da equipe. O projeto está funcional e foi concluído como entrega de um projeto acadêmico semestral.
 
 ---
 
-## 👤 Author
+## 👥 Colaboradores
 
-**Rafael Sanguini Colagrossi** — Software Engineering Student
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://linkedin.com/in/rafaelsanguini)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white)](https://github.com/rsanguini)
-[![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=flat-square&logo=vercel&logoColor=white)](https://rafaelsanguini.vercel.app)
-[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:rafaelcolagrossi@gmail.com)
+| Colaborador | Responsabilidades |
+|---|---|
+| **[Rafael Sanguini](https://github.com/rsanguini)** | Desenvolvimento frontend, UI/UX, autenticação, painel interativo e página da comunidade. |
+| **[Raphael Sales](https://github.com/RaphaelSalesDEV)** | Integração com Firebase, lógica de backend, painel administrativo e implantação. |
 
 ---
 
-## 📄 License
 
-This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
+## 📄 Licença
+
+Este projeto está licenciado sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE) para obter mais informações.
 
 ---
 
-⭐ If this project was helpful, leave a star — it means a lot!
+⭐ Se este projeto foi interessante para você, considere deixar uma estrela no repositório!
